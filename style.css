@@ -153,35 +153,13 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-image:
-        url("WhatsApp Image 2026-09-20 at 20.40.33.jpeg");
-
+    background-image: url ("WhatsApp Image 2026-09-20 at 20.40.33.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     overflow: hidden;
 }
-
-
-/* Kalau belum ada gambar hero.jpg,
-   bagian ini tetap membuat background
-   terlihat seperti foto gelap */
-
-.hero::before {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            rgba(25, 25, 25, 0.48),
-            rgba(25, 25, 25, 0.48)
-        );
-}
-
 
 /* HERO TEXT */
 
