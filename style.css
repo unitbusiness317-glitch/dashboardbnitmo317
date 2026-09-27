@@ -503,7 +503,7 @@ footer {
 
 }
 /* =========================================
-   CREDIT CONSUMER
+   KREDIT KONSUMER
 ========================================= */
 
 .page-header {
@@ -545,7 +545,7 @@ footer {
 
 /* CONTENT */
 
-.consumer-content {
+.konsumer-content {
     min-height: 500px;
 
     padding: 60px 8%;
@@ -556,7 +556,7 @@ footer {
 
 /* GRID */
 
-.consumer-grid {
+.konsumer-grid {
     max-width: 1000px;
 
     margin: auto;
@@ -571,7 +571,7 @@ footer {
 
 /* CARD */
 
-.consumer-card {
+.konsumer-card {
     min-height: 280px;
 
     background: white;
@@ -605,7 +605,7 @@ footer {
 
 /* HOVER */
 
-.consumer-card:hover {
+.konsumer-card:hover {
     transform: translateY(-7px);
 
     box-shadow:
@@ -615,7 +615,7 @@ footer {
 
 /* ICON */
 
-.consumer-icon {
+.konsumer-icon {
     width: 75px;
     height: 75px;
 
@@ -638,7 +638,7 @@ footer {
 }
 
 
-.consumer-card h2 {
+.konsumer-card h2 {
     margin: 5px 0;
 
     font-family: Georgia, "Times New Roman", serif;
@@ -649,7 +649,7 @@ footer {
 }
 
 
-.consumer-card p {
+.konsumer-card p {
     color: #666;
 
     font-size: 15px;
@@ -658,7 +658,7 @@ footer {
 }
 
 
-.consumer-card span {
+.konsumer-card span {
     color: #0084a0;
 
     font-weight: bold;
@@ -673,7 +673,7 @@ footer {
 
 @media (max-width: 768px) {
 
-    .consumer-grid {
+    .konsumer-grid {
         grid-template-columns: 1fr;
     }
 
@@ -683,140 +683,3 @@ footer {
 
 }
 
-.photo-carousel {
-    position: relative;
-
-    width: 100%;
-    height: 100%;
-
-    overflow: hidden;
-
-    background: #ddd;
-}
-
-.slides {
-    width: 100%;
-    height: 100%;
-}
-
-.slide {
-    display: none;
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slide.active {
-    display: block;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: center;
-
-    display: block;
-}
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 50px;
-    height: 50px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: rgba(0, 0, 0, 0.55);
-    color: white;
-
-    font-size: 30px;
-    cursor: pointer;
-
-    z-index: 100;
-}
-
-.carousel-btn:hover {
-    background: rgba(0, 0, 0, 0.85);
-}
-
-.prev {
-    left: 20px;
-}
-
-.next {
-    right: 20px;
-}
-
-/* Tombol kiri kanan */
-
-.carousel-btn {
-    position: absolute;
-
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 45px;
-    height: 45px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: rgba(0, 0, 0, 0.45);
-
-    color: white;
-
-    font-size: 25px;
-
-    cursor: pointer;
-
-    z-index: 5;
-}
-
-.carousel-btn:hover {
-    background: rgba(0, 0, 0, 0.75);
-}
-
-.prev {
-    left: 20px;
-}
-
-.next {
-    right: 20px;
-}
-
-
-/* Titik indikator */
-
-.carousel-dots {
-    position: absolute;
-
-    bottom: 12px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    display: flex;
-    gap: 8px;
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-
-    border-radius: 50%;
-
-    background: rgba(255,255,255,0.6);
-
-    cursor: pointer;
-}
-
-.dot.active {
-    background: white;
-    transform: scale(1.3);
-}
