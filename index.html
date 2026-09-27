@@ -34,8 +34,12 @@
                 HOME
             </a>
 
-            <a href="credit-consumer.html">
-                CREDIT CONSUMER
+            <a href="Kredit-Produktif.html">
+                KREDIT Produktif
+            </a>
+
+            <a href="Kredit-Konsumer.html">
+                KREDIT KONSUMER
             </a>
 
             <a href="kartu-kredit.html">
@@ -58,84 +62,6 @@
 
     </section>
 
-    <!-- CAROUSEL FOTO DI BAWAH BACKGROUND -->
-    <section class="photo-carousel">
-
-        <div class="slides">
-
-            <div class="slide active">
-                <img src="Posisi tabungan 21" alt="Foto BNI 1">
-            </div>
-
-            <div class="slide">
-                <img src="Posisi giro 21.png" alt="Foto BNI 2">
-            </div>
-
-            <div class="slide">
-                <img src="posisi 21 deposito .png" alt="Foto BNI 3">
-            </div>
-
-            <div class="slide">
-                <img src="TOTAL KREDIT.png" alt="Foto BNI 4">
-            </div>
-
-            <div class="slide">
-                <img src="FLEKSI.png" alt="Foto BNI 5">
-            </div>
-
-            <div class="slide">
-                <img src="GRIYA.png" alt="Foto BNI 6">
-            </div>
-
-            <div class="slide">
-                <img src="INSTAN.png" alt="Foto BNI 7">
-            </div>
-
-            <div class="slide">
-                <img src="CC.png" alt="Foto BNI 8">
-            </div>
-
-            <div class="slide">
-                <img src="SME.png" alt="Foto BNI 9">
-            </div>
-
-            <div class="slide">
-                <img src="posisi 21 deposito .png" alt="Foto BNI 10">
-            </div>
-
-        </div>
-
-        <button class="carousel-btn prev" onclick="changeSlide(-1)">
-            &#10094;
-        </button>
-
-        <button class="carousel-btn next" onclick="changeSlide(1)">
-            &#10095;
-        </button>
-
-        <button class="carousel-btn next" onclick="changeSlide(2)">
-            &#10095;
-        </button>
-
-        <div class="carousel-dots">
-
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
-
-        </div>
-
-    </section>
-
-
-
     <!-- ================= CONTENT ================= -->
     <main class="content">
 
@@ -144,10 +70,10 @@
             <!-- ================= KOLOM 1 ================= -->
             <section class="column">
                 
-                <h2>PIPELINE</h2>
+                <h2>LAPORAN BM</h2>
 
                 <a href="https://docs.google.com/spreadsheets/d/1U5KD3_us_gJoLApbxJgd6CesjrJDxZeUEaV5qH1Txnc/edit?usp=sharing" class="menu-card">
-                    PIPELINE DPK Tomohon
+                    POSISI BNI CABANG TOMOHON
                 </a>
 
                 <a href="#" class="menu-card">
@@ -223,66 +149,6 @@
     <footer>
         <p>© BNI Kantor Cabang Tomohon | No Fraud Kinerja Nummer One</p>
     </footer>
-
-<script>
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const slides = document.querySelectorAll(".slide");
-
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-
-    let currentIndex = 0;
-
-
-    function showSlide(index) {
-
-        // Sembunyikan semua foto
-        slides.forEach(function (slide) {
-            slide.classList.remove("active");
-        });
-
-
-        // Tampilkan foto yang dipilih
-        slides[index].classList.add("active");
-    }
-
-
-    // TOMBOL KANAN
-    nextBtn.addEventListener("click", function () {
-
-        currentIndex++;
-
-        if (currentIndex >= slides.length) {
-            currentIndex = 0;
-        }
-
-        showSlide(currentIndex);
-
-    });
-
-
-    // TOMBOL KIRI
-    prevBtn.addEventListener("click", function () {
-
-        currentIndex--;
-
-        if (currentIndex < 0) {
-            currentIndex = slides.length - 1;
-        }
-
-        showSlide(currentIndex);
-
-    });
-
-
-    // Tampilkan foto pertama
-    showSlide(currentIndex);
-
-});
-
-</script>
 
 </body>
 </html>
