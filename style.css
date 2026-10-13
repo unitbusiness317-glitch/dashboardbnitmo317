@@ -713,9 +713,9 @@ footer {
 
 .black-panel {
 
-    width: 92%;
+    width: 100%;
 
-    max-width: 1250px;
+    max-width: 100%;
 
     min-height: 210px;
 
