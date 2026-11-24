@@ -685,8 +685,8 @@ footer {
 
 .looser-gainer-section {
   width: 100%;
-  max-width: 1100px;
-  margin: 35px auto;
+  max-width: 1200px;
+  margin: 30px auto;
   padding: 20px;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
@@ -700,28 +700,53 @@ footer {
   margin-bottom: 35px;
 }
 
-.data-section {
-  margin-bottom: 40px;
+.data-card {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
-.data-title {
-  background: #3999c2;
-  color: white;
-  padding: 16px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 20px;
+.data-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
   margin-bottom: 20px;
+  border-bottom: 3px solid #3999c2;
+  padding-bottom: 15px;
+}
+
+.data-header h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #172f52;
+}
+
+.drive-link {
+  display: inline-block;
+  background: #0f9d58;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.drive-link:hover {
+  background: #087b43;
 }
 
 .spreadsheet-container {
   width: 100%;
-  height: 500px;
+  height: 550px;
   overflow: hidden;
   border: 1px solid #d5dce5;
   border-radius: 8px;
-  background: white;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  background: #f8fafc;
 }
 
 .spreadsheet-container iframe {
@@ -729,22 +754,6 @@ footer {
   height: 100%;
   border: none;
   display: block;
-}
-
-.spreadsheet-link {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 20px;
-  background: #0f9d58;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.spreadsheet-link:hover {
-  background: #087b43;
 }
 
 @media (max-width: 600px) {
@@ -756,11 +765,15 @@ footer {
     font-size: 24px;
   }
 
-  .data-title {
-    font-size: 17px;
+  .data-card {
+    padding: 12px;
+  }
+
+  .data-header h3 {
+    font-size: 18px;
   }
 
   .spreadsheet-container {
-    height: 400px;
+    height: 450px;
   }
 }
